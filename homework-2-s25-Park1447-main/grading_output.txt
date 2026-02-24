@@ -1,0 +1,52 @@
+
+Problem 1 Grading Output:
+Test case 1:
+Input data: [4, 3, 8, 4, -1, 2, -10, -5, 0], histogram(data, 10, -5, 10)
+Expected output: [1, 0, 1, 1, 1, 1, 2, 0, 1, 0]
+12.5 points - passed
+Test case 1:
+Input data: [-4, -3.2, 0, 7.6, 1.0, 2.2, 30, 2.2, 1.9, -8.3, 6, 5], histogram(data, 10, 10, 0)
+Expected output: [1, 2, 2, 0, 0, 1, 1, 1, 0, 0]
+12.5 points - passed
+Test case 1:
+Input data: [2, 2, 2], histogram(data, 3, -2, 3)
+Expected output: [0, 0, 3]
+12.5 points - passed
+Test case 1:
+Input data: [-1, -1, -1, 10, 10], histogram(data, 5, -1, 10)
+Expected output: [3, 0, 0, 0, 0]
+12.5 points - passed
+
+Problem 2 Grading Output:
+Test case 5:
+Input data: person_to_day = {'John': 5, 'Jane': 10, 'Mike': 20}
+             person_to_month = {'John': 3, 'Jane': 5, 'Mike': 7}
+             person_to_year = {'John': 1990, 'Jane': 1995, 'Mike': 2000}
+Explanation: Given the dictionaries of person_to_day, person_to_month, and person_to_year, the function should combine them into a single dictionary where each month maps to a tuple containing the person, day, year, and age.
+Expected output: {3: [("John", 5, 1990, 35)], 5: [("Jane", 10, 1995, 30)], 7: [("Mike", 20, 2000, 25)]}
+12.5 points - passed
+Test case 6:
+Input data: person_to_day = {'Alex': 20, 'Bob': 15, 'Charlie': 25}
+             person_to_month = {'Alex': 12, 'Bob': 1, 'Charlie': 2}
+             person_to_year = {'Alex': 1980, 'Bob': 1985, 'Charlie': 1990}
+Explanation: Given the dictionaries of person_to_day, person_to_month, and person_to_year, the function should combine them into a single dictionary where each month maps to a tuple containing the person, day, year, and age.
+Expected output: {12: ("Alex", 20, 1980, 45), 1: ("Bob", 15, 1985, 40), 2: ("Charlie", 25, 1990, 35)}
+12.5 points - passed
+Test case 7:
+Input data: person_to_day = {'Sophia': 30, 'Emma': 12, 'Olivia': 18}
+             person_to_month = {'Sophia': 6, 'Emma': 7, 'Olivia': 9}
+             person_to_year = {'Sophia': 2000, 'Emma': 2005, 'Olivia': 2010}
+Explanation: Given the dictionaries of person_to_day, person_to_month, and person_to_year, the function should combine them into a single dictionary where each month maps to a tuple containing the person, day, year, and age. This test case allows people who have used lists instead of tuples to score partial points. Test case 5 and 6, will not be regraded if you have used lists instead of tuples for single entries.
+Expected output: {6: ("Sophia", 30, 2000, 25), 7: ("Emma", 12, 2005, 20), 9: ("Olivia", 18, 2010, 15)}
+12.5 points - passed
+Test case 8:
+Input data: person_to_day = {'Harry': 10, 'Liam': 15, 'William': 20}
+             person_to_month = {'Harry': 11, 'Liam': 12, 'William': 1}
+             person_to_year = {'Harry': 1990, 'Liam': 1995, 'William': 2000}
+Explanation: Given the dictionaries of person_to_day, person_to_month, and person_to_year, the function should combine them into a single dictionary where each month maps to a tuple containing the person, day, year, and age. This test case allows people who have used lists instead of tuples to score partial points. Test case 5 and 6, will not be regraded if you have used lists instead of tuples for single entries.
+Expected output: {11: ("Harry", 10, 1990, 35), 12: ("Liam", 15, 1995, 30), 1: ("William", 20, 2000, 25)}
+12.5 points - passed
+
+Total points: 100.0
+
+Final Score: 100.0
